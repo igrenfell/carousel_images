@@ -27,8 +27,7 @@ for(curfolder in 1:nfolders)
    thresh.gray <-thresh(img.gray, 10, 10, 0.15)
   # plot(thresh.gray)
    kern <- makeBrush(5, shape='disc') 
-   thresh.array <- array(thresh.gray, dim = dim(thresh.gray) )
-   dilate.gray <- EBImage::dilate(thresh.array,kern)
+   dilate.gray <- EBImage::dilate(thresh.gray,kern)
    
    
  }
